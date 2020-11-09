@@ -16,5 +16,6 @@
   "bugs": {
     "url": "https://github.com/YujiYashima/physics-formulas-hs/issues"
   },
-  "homepage": "https://github.com/YujiYashima/physics-formulas-hs#readme"
+  "homepage": "https://github.com/YujiYashima/physics-formulas-hs#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
