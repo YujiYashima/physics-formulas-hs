@@ -5,7 +5,7 @@ function velocidadeEscalarMedia(distancia, tempo, unidadeMedida) {
     return `${distancia/tempo} ${unidadeMedida}`  
 }
 
-//Coonversor de unidade de Velocidade Media
+//Conversor de unidade de Velocidade Media
 function converterVelocidadeMedia(velocidade, converterPara) {
 
     switch (converterPara) {
@@ -44,19 +44,19 @@ function velocidadeRelativaAfastamento(velocidadeA, velocidadeB, unidadeMedida) 
 }
 
 //Aceleração Media
-function AceleraçaoMedia(variacaoVelocidade, tempo) {
+function aceleraçaoMedia(variacaoVelocidade, tempo) {
 
     return `${variacaoVelocidade / tempo} m/s^2`
 }
 
 //Função Horaria da Velocidade
-function FunçaoHorariaDaVelocidade(velocidadeInicial, aceleraçao, tempo) {
+function funçaoHorariaDaVelocidade(velocidadeInicial, aceleraçao, tempo) {
     
     return `${velocidadeInicial + aceleraçao * tempo} m/s`
 }
 
 //Função Horaria do Espaço
-function FunçaoHorariaDoEspaço(espaçoInicial, velocidadeInicial, tempo, aceleraçao) {
+function funçaoHorariaDoEspaço(espaçoInicial, velocidadeInicial, tempo, aceleraçao) {
 
     return `${espaçoInicial + (velocidadeInicial * tempo) + (aceleraçao * tempo ** 2)/2} m`
 }
@@ -74,8 +74,8 @@ module.exports = {
     velocidadeRelativaEncontro,
     velocidadeRelativaPerseguicao,
     velocidadeRelativaAfastamento,
-    AceleraçaoMedia,
-    FunçaoHorariaDaVelocidade,
-    FunçaoHorariaDoEspaço,
+    aceleraçaoMedia,
+    funçaoHorariaDaVelocidade,
+    funçaoHorariaDoEspaço,
     velocidadeMediaMUV
 }
