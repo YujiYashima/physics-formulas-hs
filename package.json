@@ -1,6 +1,6 @@
 {
   "name": "physics-formulas-hs",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Pacote NPM com enfase em física e suas formulas. Suporte total a língua portuguesa e facilidade de entendimento para leigos e estudantes. Links para o aprendizado da formula e fácil acesso.",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/YujiYashima/physics-formulas-hs.git"
   },
-  "keywords": ["formulas", "physics", "high-school", "fisica", "calculations", "science", "ensino-medio", "math", "npm-package"],
+  "keywords": ["formulas", "physics", "high-school", "fisica", "calculations", "science", "ensino-medio", "math", "npm-package", "physics-formulas"],
   "author": "YujiYashima",
   "license": "ISC",
   "bugs": {
