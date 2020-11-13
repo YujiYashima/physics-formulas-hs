@@ -1,4 +1,4 @@
-  # :notebook: Formulas de Fisica (Ensino Médio) :pencil2: 
+  # Formulas de Fisica (Ensino Médio)
 
   Pacote NPM com enfase em física e suas formulas. Suporte total a língua portuguesa e facilidade de entendimento para leigos e estudantes. Links para o aprendizado da formula e fácil acesso.
 
@@ -122,3 +122,7 @@ Acesse os seguintes endereçoes, a fim de aprofundar seu conhecimento:
 - [Arquivo no NPM](https://www.npmjs.com/package/physics-formulas-hs)
 - [Reprositorio Github](https://github.com/YujiYashima/physics-formulas-hs)
 - [Brasil Escola](https://brasilescola.uol.com.br/)
+
+<h2 id="licenca">Licença</h2>
+
+[MIT](https://github.com/YujiYashima/physics-formulas-hs/blob/main/LICENSE)
