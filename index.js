@@ -1,8 +1,8 @@
-/*-----------------------------------CINEMATICA-----------------------------------*/
+/* CINEMATICA */
 
 //Velocidade Escalar media
-function velocidadeEscalarMedia(distancia, tempo, unidadeMedida) {
-    return `${distancia/tempo} ${unidadeMedida}`  
+function velocidadeEscalarMedia(deslocamento, tempo, unidadeMedida) {
+    return `${deslocamento/tempo} ${unidadeMedida}`  
 }
 
 //Conversor de unidade de Velocidade Media
@@ -67,6 +67,8 @@ function velocidadeMediaMUV(velocidadeA, velocidadeB , unidadeMedida) {
     return `${(velocidadeA + velocidadeB)/2} ${unidadeMedida}`
 }
 
+
+/* EXPORTAÇÃO */
 module.exports = {
     velocidadeEscalarMedia,
     converterVelocidadeMedia,
