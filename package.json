@@ -12,10 +12,9 @@
   },
   "keywords": ["formulas", "physics", "high-school", "fisica", "calculations", "science", "ensino-medio", "math", "npm-package", "physics-formulas"],
   "author": "YujiYashima",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/YujiYashima/physics-formulas-hs/issues"
   },
-  "homepage": "https://github.com/YujiYashima/physics-formulas-hs#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "homepage": "https://github.com/YujiYashima/physics-formulas-hs#readme"
 }
