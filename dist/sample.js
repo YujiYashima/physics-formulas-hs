@@ -20,5 +20,4 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var teste = __importStar(require("./index"));
-//console.log(Number(teste.velocidadeRelativaEncontro(10, 10, "km/h").split(" ")[0]))
-teste.velocidadeMediaMUV(10, 20, "km/h", "console");
+teste.velocidadeMediaMUV(10, 20, "km/h");

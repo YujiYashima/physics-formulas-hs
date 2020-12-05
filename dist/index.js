@@ -1,6 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.velocidadeMediaMUV = exports.funçaoHorariaDoEspaço = exports.funçaoHorariaDaVelocidade = exports.aceleraçaoMedia = exports.velocidadeRelativaAfastamento = exports.velocidadeRelativaPerseguiçao = exports.velocidadeRelativaEncontro = exports.funçaoHorariaDasPosicoes = exports.converterVelocidadeMedia = exports.velocidadeEscalarMedia = void 0;
+exports.velocidadeMediaMUV = exports.funçaoHorariaDoEspaço = exports.funçaoHorariaDaVelocidade = exports.aceleraçaoMedia = exports.velocidadeRelativaAfastamento = exports.velocidadeRelativaPerseguiçao = exports.velocidadeRelativaEncontro = exports.funçaoHorariaDasPosicoes = exports.converterVelocidadeMedia = exports.velocidadeEscalarMedia = exports.apenasNumero = exports.print = void 0;
+//Definiçao de alguns parametros
+var print = function (e) { return console.log(e); };
+exports.print = print;
+//Retorna só o numero sem a unidade de medida
+var apenasNumero = function (valor) { return Number(valor.split(" ")[0]); };
+exports.apenasNumero = apenasNumero;
 //Velocidade Escalar media
 var velocidadeEscalarMedia = function (deslocamento, tempo, unidadeMedida) { return tempo < 0 ? "Nao existe tempo negativo!" : deslocamento / tempo + " " + unidadeMedida; };
 exports.velocidadeEscalarMedia = velocidadeEscalarMedia;
@@ -17,7 +23,7 @@ var converterVelocidadeMedia = function (velocidade, converterPara) {
 };
 exports.converterVelocidadeMedia = converterVelocidadeMedia;
 //Função horaria das posições
-var funçaoHorariaDasPosicoes = function (espaçoInicial, velocidade, tempo) { return tempo < 0 ? "Nao existe tempo negativo!" : espaçoInicial + velocidade * tempo; };
+var funçaoHorariaDasPosicoes = function (espaçoInicial, velocidade, tempo) { return tempo < 0 ? "Nao existe tempo negativo!" : espaçoInicial + velocidade * tempo + " m"; };
 exports.funçaoHorariaDasPosicoes = funçaoHorariaDasPosicoes;
 //Velocidade Relativa (Encontro)
 var velocidadeRelativaEncontro = function (velocidadeA, velocidadeB, unidadeMedida) { return velocidadeA + velocidadeB + " " + unidadeMedida; };
