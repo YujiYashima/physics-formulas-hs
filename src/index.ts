@@ -1,6 +1,10 @@
 //Definiçao de alguns parametros
+export const print = (e: any) => console.log(e);
 type answer = "console"; //Usar futuramente para habilitar o console.log
 type unidadeVelocidade = |"km/h"|"m/s";
+
+//Retorna só o numero sem a unidade de medida
+export const apenasNumero = (valor: string) => Number(valor.split(" ")[0]);
 
 //Velocidade Escalar media
 export const velocidadeEscalarMedia = (deslocamento: number, tempo: number, unidadeMedida: unidadeVelocidade) => tempo < 0 ? "Nao existe tempo negativo!" : `${deslocamento/tempo} ${unidadeMedida}`;
@@ -21,7 +25,7 @@ export const converterVelocidadeMedia = (velocidade: number, converterPara: unid
 }
 
 //Função horaria das posições
-export const funçaoHorariaDasPosicoes = (espaçoInicial: number, velocidade: number, tempo: number) => tempo < 0 ? "Nao existe tempo negativo!" : espaçoInicial + velocidade * tempo;
+export const funçaoHorariaDasPosicoes = (espaçoInicial: number, velocidade: number, tempo: number) => tempo < 0 ? "Nao existe tempo negativo!" : `${espaçoInicial + velocidade * tempo} m`;
 
 //Velocidade Relativa (Encontro)
 export const velocidadeRelativaEncontro = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => `${velocidadeA + velocidadeB} ${unidadeMedida}`  
