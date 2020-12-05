@@ -27,14 +27,14 @@ $ npm i physics-formulas-hs
 
 * [NPM](https://docs.npmjs.com/)
 * [Javascript](https://www.w3schools.com/js/default.asp) 
-* [Typescript (Futuramente)](https://www.typescriptlang.org/docs/)
+* [Typescript](https://www.typescriptlang.org/docs/)
   
 
 <h2 id="materias">Matérias de Fisica</h2>
 
 > **Retirado do canal [Fisica 2.0](https://www.youtube.com/channel/UC_e7B1w8T-4ZD-QtIVAO9pg)**
 
-- [Cinemática]()
+- [Dinamica]()
 - [Leis de Newton]()
 - [Trabalho, Potência e Energia]()
 - [Impulso e Quantidade de Movimento]()
@@ -65,13 +65,13 @@ $ npm i physics-formulas-hs
 Exemplos:
 
 ```js
-const fisica = require('physics-formulas-hs')
+const fisica = require('physics-formulas-hs');
 
-fisica.velocidadeEscalarMedia(10, 2, "km/h") // --> 5 km/h
+fisica.velocidadeEscalarMedia(10, 2, "km/h"); // --> 5 km/h
 
-fisica.aceleraçaoMedia(100, 5) // --> 20 m/s^2
+fisica.aceleraçaoMedia(100, 5); // --> 20 m/s^2
 
-fisica.funçaoHorariaDaVelocidade(10, 20, 5) // --> 110 m/s
+fisica.funçaoHorariaDaVelocidade(10, 20, 5); // --> 110 m/s
 ```
 
 > OBS: **[Documentação completa de todas as  das funções](Formulas.md)**
@@ -122,6 +122,7 @@ Acesse os seguintes endereçoes, a fim de aprofundar seu conhecimento:
 - [Arquivo no NPM](https://www.npmjs.com/package/physics-formulas-hs)
 - [Reprositorio Github](https://github.com/YujiYashima/physics-formulas-hs)
 - [Brasil Escola](https://brasilescola.uol.com.br/)
+- [Mundo Educaçao](https://mundoeducacao.uol.com.br/)
 
 <h2 id="licenca">Licença</h2>
 
