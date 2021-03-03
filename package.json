@@ -1,6 +1,6 @@
 {
   "name": "physics-formulas-hs",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "Pacote NPM com enfase em física e suas formulas. Suporte total a língua portuguesa e facilidade de entendimento para leigos e estudantes. Links para o aprendizado da formula e fácil acesso.",
   "main": "dist/index.js",
   "types" : "dist/index.d.ts",
