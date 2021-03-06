@@ -1,7 +1,2 @@
 # Node Modules
 node_modules/
-
-# Sample files for test
-dist/sample.d.ts
-dist/sample.js
-src/sample.ts
