@@ -1,58 +1,129 @@
-//Definiçao de alguns parametros
-export const print = (e: any) => console.log(e);
-type answer = "console"; //Usar futuramente para habilitar o console.log
+// ----------------------------------------------------
+//             UNIDADES DE MEDIDAS PADROES
+// ----------------------------------------------------
 type unidadeVelocidade = |"km/h"|"m/s";
 
+
+// ----------------------------------------------------
+//                FACILIDADES PARA O DEV
+// ----------------------------------------------------
+
+//Exibe na tela (console/terminal)
+const print = (e: any) => console.log(e);
+
 //Retorna só o numero sem a unidade de medida
-export const apenasNumero = (valor: string) => Number(valor.split(" ")[0]);
+const apenasNumero = (valor: string) => Number(valor.split(" ")[0]);
+
+
+// ----------------------------------------------------
+//                       VETORES
+// ----------------------------------------------------
+
+//Resultante de vetores com a lei dos Cossenos (Regra do Paralelogramo)
+const resultanteDeVetores = (vetorA: number, vetorB: number, anguloGraus: number) => {
+
+    const radiano = anguloGraus * Math.PI/180;
+
+    const resultanteAoQuadrado = (Math.pow(vetorA, 2) + Math.pow(vetorB, 2) + (2 * vetorA * vetorB * Math.cos(radiano)));
+
+    const resultante = Math.round(Math.sqrt(resultanteAoQuadrado));
+
+    return `${resultante}`;
+}
+
+
+// ----------------------------------------------------
+//                      CINEMATICA
+// ----------------------------------------------------
 
 //Velocidade Escalar media
-export const velocidadeEscalarMedia = (deslocamento: number, tempo: number, unidadeMedida: unidadeVelocidade) => tempo < 0 ? "Nao existe tempo negativo!" : `${deslocamento/tempo} ${unidadeMedida}`;
+const velocidadeEscalarMedia = (deslocamento: number, tempo: number, unidadeMedida: unidadeVelocidade) => {
+    
+    return tempo < 0 ? "Não existe tempo negativo!" : `${deslocamento/tempo} ${unidadeMedida}`;
+}
 
 //Conversor de unidade de Velocidade Media
-export const converterVelocidadeMedia = (velocidade: number, converterPara: unidadeVelocidade) => {
+const converterVelocidadeMedia = (velocidadeMedia: string) => {
 
-    switch (converterPara) {
+    const num = Number(velocidadeMedia.split(" ")[0]);
+    const unidade = velocidadeMedia.split(" ")[1];
+
+    switch (unidade) {
+
         case "km/h":
-            return `${Number(velocidade) * 3.6} ${converterPara}`;
+            return `${Number(num) / 3.6} m/s`;
     
         case "m/s":
-            return `${Number(velocidade) / 3.6} ${converterPara}`;
+            return `${Number(num) * 3.6} km/h`;
 
         default:
             return "Conversão Inválida!";
+            
     }
+
 }
 
 //Função horaria das posições
-export const funçaoHorariaDasPosicoes = (espaçoInicial: number, velocidade: number, tempo: number) => tempo < 0 ? "Nao existe tempo negativo!" : `${espaçoInicial + velocidade * tempo} m`;
+const funçaoHorariaDasPosicoes = (espaçoInicial: number, velocidade: number, tempo: number) => {
+    
+    return tempo < 0 ? "Não existe tempo negativo!" : `${espaçoInicial + velocidade * tempo} m`;
+}
 
 //Velocidade Relativa (Encontro)
-export const velocidadeRelativaEncontro = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => `${velocidadeA + velocidadeB} ${unidadeMedida}`  
+const velocidadeRelativaEncontro = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => {
+    
+    return `${velocidadeA + velocidadeB} ${unidadeMedida}`;
+}  
 
 //Velocidade Relativa (Perseguição)
-export const velocidadeRelativaPerseguiçao = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => `${velocidadeA - velocidadeB} ${unidadeMedida}`
+const velocidadeRelativaPerseguiçao = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => {
+    
+    return `${velocidadeA - velocidadeB} ${unidadeMedida}`;
+}
 
 //Velocidade Relativa (Afastamento)
-export const velocidadeRelativaAfastamento = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => `${velocidadeA + velocidadeB} ${unidadeMedida}`
+const velocidadeRelativaAfastamento = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => {
+    
+    return `${velocidadeA + velocidadeB} ${unidadeMedida}`;
+}
 
 //Aceleração Media
-export const aceleraçaoMedia = (variacaoVelocidade: number, tempo: number) => tempo < 0 ? "Nao existe tempo negativo!" : `${variacaoVelocidade / tempo} m/s²`;
+const aceleraçaoMedia = (variacaoVelocidade: number, tempo: number) => {
+    
+    return tempo < 0 ? "Não existe tempo negativo!" : `${variacaoVelocidade / tempo} m/s²`;
+}
 
 //Função Horaria da Velocidade
-export const funçaoHorariaDaVelocidade = (velocidadeInicial: number, aceleraçao: number, tempo: number) => tempo < 0 ? "Nao existe tempo negativo!" : `${velocidadeInicial + aceleraçao * tempo} m/s`;
+const funçaoHorariaDaVelocidade = (velocidadeInicial: number, aceleraçao: number, tempo: number) => {
+    
+    return tempo < 0 ? "Não existe tempo negativo!" : `${velocidadeInicial + aceleraçao * tempo} m/s`;
+}
 
 //Função Horaria do Espaço
-export const funçaoHorariaDoEspaço = (espaçoInicial: number, velocidadeInicial: number, tempo: number, aceleraçao:number) => tempo < 0 ? "Nao existe tempo negativo!" : `${espaçoInicial + (velocidadeInicial * tempo) + (aceleraçao * tempo ** 2)/2} m`;
+const funçaoHorariaDoEspaço = (espaçoInicial: number, velocidadeInicial: number, tempo: number, aceleraçao:number) => {
+    
+    return tempo < 0 ? "Não existe tempo negativo!" : `${espaçoInicial + (velocidadeInicial * tempo) + (aceleraçao * tempo ** 2)/2} m`;
+}
 
 //Velocidade Media (MUV)
-export const velocidadeMediaMUV = (velocidadeA: number, velocidadeB:number, unidadeMedida: unidadeVelocidade, print?: answer) => {
-
-    if (print == "console") {
-        
-        console.log(`${(velocidadeA + velocidadeB)/2} ${unidadeMedida}`);
-
-    }
+const velocidadeMediaMUV = (velocidadeA: number, velocidadeB:number, unidadeMedida: unidadeVelocidade) => {
 
     return `${(velocidadeA + velocidadeB)/2} ${unidadeMedida}`;
 }
+
+
+// ----------------------------------------------------
+//                 EXPORTS DE FUNÇOES
+// ----------------------------------------------------
+
+//Dev
+export { print, apenasNumero };
+
+//Vetores
+export { resultanteDeVetores };
+
+//Cinematica
+export { 
+    velocidadeEscalarMedia, converterVelocidadeMedia, funçaoHorariaDasPosicoes, velocidadeRelativaEncontro, velocidadeRelativaPerseguiçao, velocidadeRelativaAfastamento, aceleraçaoMedia, funçaoHorariaDaVelocidade, funçaoHorariaDoEspaço, velocidadeMediaMUV
+};
+

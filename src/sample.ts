@@ -1,4 +1,4 @@
-import * as teste from './index';
+import { print, resultanteDeVetores, converterVelocidadeMedia } from './index';
 
-teste.velocidadeMediaMUV(10, 20, "km/h");
-
+print(resultanteDeVetores(3, 4, 90));
+print(converterVelocidadeMedia("36 km/h"));
