@@ -34,23 +34,24 @@ $ npm i physics-formulas-hs
 
 > **Retirado do canal [Fisica 2.0](https://www.youtube.com/channel/UC_e7B1w8T-4ZD-QtIVAO9pg)**
 
-- [Dinamica]()
-- [Leis de Newton]()
-- [Trabalho, Potência e Energia]()
-- [Impulso e Quantidade de Movimento]()
-- [Estática]()
-- [Hidrostática]()
-- [Termologia]()
-- [Calorimetria]()
-- [Dilatação Termica]()
-- [Gases]()
-- [Termodinâmica]()
-- [Óptica]()
-- [Ondulatória]()
-- [Esletrostática]()
-- [Campo Elétrico]()
-- [Corrente, Resistência, Tensão e Potência]()
-- [Associação de Resistores]()
+- [x] Vetores
+- [ ] Cinemática
+- [ ] Dinamica
+- [ ] Trabalho, Potência e Energia
+- [ ] Impulso e Quantidade de Movimento
+- [ ] Estática
+- [ ] Hidrostática
+- [ ] Termologia
+- [ ] Calorimetria
+- [ ] Dilatação Termica
+- [ ] Gases
+- [ ] Termodinâmica
+- [ ] Óptica
+- [ ] Ondulatória
+- [ ] Esletrostática
+- [ ] Campo Elétrico
+- [ ] Corrente, Resistência, Tensão e Potência
+- [ ] Associação de Resistores
 
 <h2 id="obj">Objetivos</h2>
 
@@ -74,7 +75,7 @@ fisica.aceleraçaoMedia(100, 5); // --> 20 m/s^2
 fisica.funçaoHorariaDaVelocidade(10, 20, 5); // --> 110 m/s
 ```
 
-> OBS: **[Documentação completa de todas as  das funções](Formulas.md)**
+> OBS: **[Documentação completa de todas as  das funções](https://github.com/YujiYashima/physics-formulas-hs/blob/main/docs/Geral.md)**
 
 <h2 id="contribuidores">Contribuidores e Contribuições</h2>
 
@@ -122,6 +123,7 @@ Acesse os seguintes endereçoes, a fim de aprofundar seu conhecimento:
 - [Arquivo no NPM](https://www.npmjs.com/package/physics-formulas-hs)
 - [Reprositorio Github](https://github.com/YujiYashima/physics-formulas-hs)
 - [Brasil Escola](https://brasilescola.uol.com.br/)
+- [Meu Artigo Brasil Escola](https://meuartigo.brasilescola.uol.com.br/)
 - [Mundo Educaçao](https://mundoeducacao.uol.com.br/)
 
 <h2 id="licenca">Licença</h2>
