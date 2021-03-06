@@ -63,10 +63,12 @@ $ npm i physics-formulas-hs
 
 <h2 id="funcoes">Funções</h2>
 
-Exemplos:
+#### Exemplos:
 
-```js
+```ts
 const fisica = require('physics-formulas-hs');
+import fisca from 'physics-formulas-hs';
+//As duas formas de importação sao válidas!!
 
 fisica.velocidadeEscalarMedia(10, 2, "km/h"); // --> 5 km/h
 
@@ -129,3 +131,9 @@ Acesse os seguintes endereçoes, a fim de aprofundar seu conhecimento:
 <h2 id="licenca">Licença</h2>
 
 [MIT](https://github.com/YujiYashima/physics-formulas-hs/blob/main/LICENSE)
+
+<h2 id="mensagem">Mensagem</h2>
+
+![Fisica no Mundo](https://nossaciencia.com.br/wp-content/uploads/2020/01/f%C3%ADsica.jpg)
+
+>Fisica está em tudo: na maçã que cai da arvore, no magnetismo que gira a sua bussola e ate nas moléculas do seu corpo. Fisica é tudo :heart:

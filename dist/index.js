@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.velocidadeMediaMUV = exports.funçaoHorariaDoEspaço = exports.funçaoHorariaDaVelocidade = exports.aceleraçaoMedia = exports.velocidadeRelativaAfastamento = exports.velocidadeRelativaPerseguiçao = exports.velocidadeRelativaEncontro = exports.funçaoHorariaDasPosicoes = exports.converterVelocidadeMedia = exports.velocidadeEscalarMedia = exports.apenasNumero = exports.print = void 0;
+exports.velocidadeMediaMUV = exports.funçaoHorariaDoEspaço = exports.funçaoHorariaDaVelocidade = exports.aceleraçaoMedia = exports.velocidadeRelativaAfastamento = exports.velocidadeRelativaPerseguiçao = exports.velocidadeRelativaEncontro = exports.funçaoHorariaDasPosicoes = exports.converterVelocidadeMedia = exports.velocidadeEscalarMedia = exports.resultanteDeVetores = exports.apenasNumero = exports.print = void 0;
 // ----------------------------------------------------
 //                FACILIDADES PARA O DEV
 // ----------------------------------------------------
@@ -13,6 +13,14 @@ exports.apenasNumero = apenasNumero;
 // ----------------------------------------------------
 //                       VETORES
 // ----------------------------------------------------
+//Resultante de vetores com a lei dos Cossenos (Regra do Paralelogramo)
+var resultanteDeVetores = function (vetorA, vetorB, anguloGraus) {
+    var radiano = anguloGraus * Math.PI / 180;
+    var resultanteAoQuadrado = (Math.pow(vetorA, 2) + Math.pow(vetorB, 2) + (2 * vetorA * vetorB * Math.cos(radiano)));
+    var resultante = Math.round(Math.sqrt(resultanteAoQuadrado));
+    return "" + resultante;
+};
+exports.resultanteDeVetores = resultanteDeVetores;
 // ----------------------------------------------------
 //                      CINEMATICA
 // ----------------------------------------------------
@@ -22,12 +30,14 @@ var velocidadeEscalarMedia = function (deslocamento, tempo, unidadeMedida) {
 };
 exports.velocidadeEscalarMedia = velocidadeEscalarMedia;
 //Conversor de unidade de Velocidade Media
-var converterVelocidadeMedia = function (velocidade, converterPara) {
-    switch (converterPara) {
+var converterVelocidadeMedia = function (velocidadeMedia) {
+    var num = Number(velocidadeMedia.split(" ")[0]);
+    var unidade = velocidadeMedia.split(" ")[1];
+    switch (unidade) {
         case "km/h":
-            return Number(velocidade) * 3.6 + " " + converterPara;
+            return Number(num) / 3.6 + " m/s";
         case "m/s":
-            return Number(velocidade) / 3.6 + " " + converterPara;
+            return Number(num) * 3.6 + " km/h";
         default:
             return "Conversão Inválida!";
     }

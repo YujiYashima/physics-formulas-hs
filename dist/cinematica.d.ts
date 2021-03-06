@@ -1,10 +1,7 @@
-declare type unidadeVelocidade = "km/h" | "m/s";
-declare const print: (e: any) => void;
-declare const apenasNumero: (valor: string) => number;
-declare const resultanteDeVetores: (vetorA: number, vetorB: number, anguloGraus: number) => string;
+import { unidadeVelocidade } from "./principal";
 declare const velocidadeEscalarMedia: (deslocamento: number, tempo: number, unidadeMedida: unidadeVelocidade) => string;
-declare const converterVelocidadeMedia: (velocidadeMedia: string) => string;
-declare const funçaoHorariaDasPosicoes: (espaçoInicial: number, velocidade: number, tempo: number) => string;
+declare const converterVelocidadeMedia: (velocidade: number, converterPara: unidadeVelocidade) => string;
+declare const funçaoHorariaDasPosicoes: (espaçoInicial: number, velocidade: number, tempo: number) => void;
 declare const velocidadeRelativaEncontro: (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => string;
 declare const velocidadeRelativaPerseguiçao: (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => string;
 declare const velocidadeRelativaAfastamento: (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => string;
@@ -12,6 +9,4 @@ declare const aceleraçaoMedia: (variacaoVelocidade: number, tempo: number) => s
 declare const funçaoHorariaDaVelocidade: (velocidadeInicial: number, aceleraçao: number, tempo: number) => string;
 declare const funçaoHorariaDoEspaço: (espaçoInicial: number, velocidadeInicial: number, tempo: number, aceleraçao: number) => string;
 declare const velocidadeMediaMUV: (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => string;
-export { print, apenasNumero };
-export { resultanteDeVetores };
 export { velocidadeEscalarMedia, converterVelocidadeMedia, funçaoHorariaDasPosicoes, velocidadeRelativaEncontro, velocidadeRelativaPerseguiçao, velocidadeRelativaAfastamento, aceleraçaoMedia, funçaoHorariaDaVelocidade, funçaoHorariaDoEspaço, velocidadeMediaMUV };
