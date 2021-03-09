@@ -1,4 +1,3 @@
-import { print, resultanteDeVetores, converterVelocidadeMedia } from './index';
+import { print, resultanteDeVetores } from './index';
 
 print(resultanteDeVetores(3, 4, 90));
-print(converterVelocidadeMedia("36 km/h"));

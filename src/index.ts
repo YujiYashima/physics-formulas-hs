@@ -42,27 +42,6 @@ const velocidadeEscalarMedia = (deslocamento: number, tempo: number, unidadeMedi
     return tempo < 0 ? "Não existe tempo negativo!" : `${deslocamento/tempo} ${unidadeMedida}`;
 }
 
-//Conversor de unidade de Velocidade Media
-const converterVelocidadeMedia = (velocidadeMedia: string) => {
-
-    const num = Number(velocidadeMedia.split(" ")[0]);
-    const unidade = velocidadeMedia.split(" ")[1];
-
-    switch (unidade) {
-
-        case "km/h":
-            return `${Number(num) / 3.6} m/s`;
-    
-        case "m/s":
-            return `${Number(num) * 3.6} km/h`;
-
-        default:
-            return "Conversão Inválida!";
-            
-    }
-
-}
-
 //Função horaria das posições
 const funçaoHorariaDasPosicoes = (espaçoInicial: number, velocidade: number, tempo: number) => {
     
@@ -124,6 +103,6 @@ export { resultanteDeVetores };
 
 //Cinematica
 export { 
-    velocidadeEscalarMedia, converterVelocidadeMedia, funçaoHorariaDasPosicoes, velocidadeRelativaEncontro, velocidadeRelativaPerseguiçao, velocidadeRelativaAfastamento, aceleraçaoMedia, funçaoHorariaDaVelocidade, funçaoHorariaDoEspaço, velocidadeMediaMUV
+    velocidadeEscalarMedia, funçaoHorariaDasPosicoes, velocidadeRelativaEncontro, velocidadeRelativaPerseguiçao, velocidadeRelativaAfastamento, aceleraçaoMedia, funçaoHorariaDaVelocidade, funçaoHorariaDoEspaço, velocidadeMediaMUV
 };
 

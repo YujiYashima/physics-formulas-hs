@@ -1,7 +1,7 @@
 {
   "name": "physics-formulas-hs",
   "version": "2.0.9",
-  "description": "Pacote NPM com enfase em física e suas formulas. Suporte total a língua portuguesa e facilidade de entendimento para leigos e estudantes. Links para o aprendizado da formula e fácil acesso.",
+  "description": "NPM package with an emphasis on physics and its formulas. Full English language support and ease of understanding for laypeople and students. Links for learning the formulas and easy access.",
   "main": "dist/index.js",
   "types" : "dist/index.d.ts",
   "scripts": {
@@ -16,14 +16,14 @@
     "formulas",
     "physics",
     "high-school",
-    "fisica",
     "calculations",
     "science",
-    "ensino-medio",
     "math",
     "npm-package",
     "physics-formulas",
-    "typscript"
+    "typscript",
+    "modules",
+    "npm"
   ],
   "author": "YujiYashima",
   "license": "MIT",

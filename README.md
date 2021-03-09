@@ -9,6 +9,7 @@
   <a href="#obj">Objetivos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#funcoes">Funções</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contribuidores">Contribuidores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#translate">Translates</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#acesse">Acesse</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licenca">Licença</a>&nbsp;&nbsp;&nbsp;
 </p>
@@ -31,8 +32,6 @@ $ npm i physics-formulas-hs
   
 
 <h2 id="materias">Matérias de Fisica</h2>
-
-> **Retirado do canal [Fisica 2.0](https://www.youtube.com/channel/UC_e7B1w8T-4ZD-QtIVAO9pg)**
 
 - [x] Vetores
 - [ ] Cinemática
@@ -116,6 +115,10 @@ fisica.funçaoHorariaDaVelocidade(10, 20, 5); // --> 110 m/s
 - Faça uma [Issue](https://github.com/YujiYashima/physics-formulas-hs/issues) 
 
 > **Qualquer modificação ou ajuda é bem-vinda. Quero melhorar o projeto e constrir um pacote facil de entender e bem completo. Espero ter a ajuda da comunidade :blue_heart: :blue_heart:**
+
+<h2 id="translate">Translate in other language</h2>
+
+- [Portuguese](https://github.com/YujiYashima/Formulas-Fisica-EM)
 
 <h2 id="acesse">Acesse Também</h2>
 
