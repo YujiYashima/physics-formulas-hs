@@ -1,142 +1,142 @@
-  # Formulas de Fisica (Ensino Médio)
+  # Physics Formulas (High School)
 
-  Pacote NPM com enfase em física e suas formulas. Suporte total a língua portuguesa e facilidade de entendimento para leigos e estudantes. Links para o aprendizado da formula e fácil acesso.
+  NPM package with an emphasis on physics and its formulas. Full English language support and ease of understanding for laypeople and students. Links for learning the formulas and easy access.
 
 <p align="center">
-  <a href="#instalacao">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#materias">Matérias de Fisica</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#obj">Objetivos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#funcoes">Funções</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#contribuidores">Contribuidores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#translate">Translates</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#acesse">Acesse</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#licenca">Licença</a>&nbsp;&nbsp;&nbsp;
+  <a href="#install">Install</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#content">Physics Content</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#goals">Goals</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#functions">Functions</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contributors">Contributors</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#translate">In other languages</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#access">Access</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licence">Licence</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 
-<h2 id="instalacao">Instalação</h2>
+<h2 id="install">Install</h2>
 
-Instalação usando o 
-[comando de instalaçao npm](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+Installation using
+[npm installation command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```bash
 $ npm i physics-formulas-hs
 ```
 
-<h2 id="tecnologias">Tecnologias</h2>
+<h2 id="technologies">Technologies</h2>
 
 * [NPM](https://docs.npmjs.com/)
 * [Javascript](https://www.w3schools.com/js/default.asp) 
 * [Typescript](https://www.typescriptlang.org/docs/)
   
 
-<h2 id="materias">Matérias de Fisica</h2>
+<h2 id="content">Physics Content</h2>
 
-- [x] Vetores
-- [ ] Cinemática
-- [ ] Dinamica
-- [ ] Trabalho, Potência e Energia
-- [ ] Impulso e Quantidade de Movimento
-- [ ] Estática
-- [ ] Hidrostática
-- [ ] Termologia
-- [ ] Calorimetria
-- [ ] Dilatação Termica
-- [ ] Gases
-- [ ] Termodinâmica
-- [ ] Óptica
-- [ ] Ondulatória
-- [ ] Esletrostática
-- [ ] Campo Elétrico
-- [ ] Corrente, Resistência, Tensão e Potência
-- [ ] Associação de Resistores
+<details>
+  <summary>Vectors</summary>
 
-<h2 id="obj">Objetivos</h2>
+  - [x] Parallelogram Law of Vectors
+</details>
 
-1. Transmitir conhecimento de fisica para leigos
-2. Ajudar programadores com "codigos prontos"
-3. Criar interdisciplinaridade entre programação e física
-4. Praticar Javascript e relembrar conceitos da fisica
-5. Facilitar desenvolvimentos de profissionais
+<details><summary>Mechanics</summary>
 
-<h2 id="funcoes">Funções</h2>
+  <details><summary>Kinematics</summary>
+    
+  </details>
 
-#### Exemplos:
+  <details><summary>Dynamics</summary>
+    
+  </details>
+
+  <details><summary>Statics</summary>
+    
+  </details>
+
+</details>
+
+
+<h2 id="goals">Goals</h2>
+
+1. Transmitting knowledge of physics to laypeople
+2. Helping programmers with "ready-made codes"
+3. Create interdisciplinarity between programming and physics
+4. Practice Javascript and remember the concepts of physics
+5. Facilitates professional development
+
+<h2 id="functions">Functions</h2>
+
+#### EXAMPLES:
 
 ```ts
-const fisica = require('physics-formulas-hs');
-import fisca from 'physics-formulas-hs';
-//As duas formas de importação sao válidas!!
+const physics = require('physics-formulas-hs');
+import physics from 'physics-formulas-hs';
+//Both forms of import are valid !!
 
-fisica.velocidadeEscalarMedia(10, 2, "km/h"); // --> 5 km/h
+physics.averageVelocity(10, 2, "km/h"); // --> 5 km/h
 
-fisica.aceleraçaoMedia(100, 5); // --> 20 m/s^2
+physics.averageAcceleration(100, 5); // --> 20 m/s²
 
-fisica.funçaoHorariaDaVelocidade(10, 20, 5); // --> 110 m/s
+physics.uniformMotionEquation(0, 10, 2); // --> 20 m
 ```
 
-> OBS: **[Documentação completa de todas as  das funções](https://github.com/YujiYashima/physics-formulas-hs/blob/main/docs/Geral.md)**
+> NOTE: **[Complete documentation of all functions](https://github.com/YujiYashima/physics-formulas-hs/blob/main/docs/General.md)**
 
-<h2 id="contribuidores">Contribuidores e Contribuições</h2>
+<h2 id="contributors">Contributors and Contributions</h2>
 
-- Criador: [Yuji Yashima](https://github.com/YujiYashima)
+- Creator: [Yuji Yashima](https://github.com/YujiYashima)
 
-- [Lista de todos os contribuidores](https://github.com/YujiYashima/physics-formulas-hs/graphs/contributors)
+- [List of all contributors](https://github.com/YujiYashima/physics-formulas-hs/graphs/contributors)
 
-### Contribua com o nosso projeto de fisca:
+### Contribute to our fisca project:
 
-- Faça um Fork desse repositório;
+- Fork this repository;
 
-- Clone nosso repositorio:
+- Clone our repository:
   ```bash
   $ git clone https://github.com/YujiYashima/physics-formulas-hs.git
   ```
 
-- Crie uma branch com a sua feature:
+- Create a branch with your feature:
   ```bash
   $ git checkout -b my-feature
   ```
 
-- Commit suas mudanças:
+- Commit your changes:
   ```bash
   $ git commit -m 'feat: My new feature'
   ```
 
-- Push a sua branch:
+- Push your branch:
   ```bash
   $ git push origin my-feature
   ```
 
-- Ir em [Pull Request](https://github.com/YujiYashima/physics-formulas-hs/pulls) do projeto original e criar uma pull request com o seu commit;
+- Go to [Pull Request](https://github.com/YujiYashima/physics-formulas-hs/pulls) of the original project and create a pull request with your commit;
 
-<p align="center">OU</p>
+<p align="center">OR</p>
 
-- Faça uma [Issue](https://github.com/YujiYashima/physics-formulas-hs/issues) 
+- DO a [Issue](https://github.com/YujiYashima/physics-formulas-hs/issues) 
 
-> **Qualquer modificação ou ajuda é bem-vinda. Quero melhorar o projeto e constrir um pacote facil de entender e bem completo. Espero ter a ajuda da comunidade :blue_heart: :blue_heart:**
+> **Any modifications or help are welcome. I want to improve the project and build a package that is easy to understand and very complete. I hope to have help from the community :blue_heart: :blue_heart:**
 
-<h2 id="translate">Translate in other language</h2>
+<h2 id="translate">In other languages</h2>
 
-- [Portuguese](https://github.com/YujiYashima/Formulas-Fisica-EM)
+- [Portuguese](https://github.com/YujiYashima/formulas-fisica-e.m)
 
-<h2 id="acesse">Acesse Também</h2>
+<h2 id="access">Access</h2>
 
-Acesse os seguintes endereçoes, a fim de aprofundar seu conhecimento:
+Access the following addresses in order to deepen your knowledge:
 
-- [Canal Fisica 2.0](https://www.youtube.com/channel/UC_e7B1w8T-4ZD-QtIVAO9pg)
-- [Arquivo no NPM](https://www.npmjs.com/package/physics-formulas-hs)
-- [Reprositorio Github](https://github.com/YujiYashima/physics-formulas-hs)
-- [Brasil Escola](https://brasilescola.uol.com.br/)
-- [Meu Artigo Brasil Escola](https://meuartigo.brasilescola.uol.com.br/)
-- [Mundo Educaçao](https://mundoeducacao.uol.com.br/)
+- [NPM Repository](https://www.npmjs.com/package/physics-formulas-hs)
+- [Github Repository](https://github.com/YujiYashima/physics-formulas-hs)
 
-<h2 id="licenca">Licença</h2>
+<h2 id="licence">Licence</h2>
 
 [MIT](https://github.com/YujiYashima/physics-formulas-hs/blob/main/LICENSE)
 
-<h2 id="mensagem">Mensagem</h2>
+<h2 id="message">Message</h2>
 
 ![Fisica no Mundo](https://nossaciencia.com.br/wp-content/uploads/2020/01/f%C3%ADsica.jpg)
 
->Fisica está em tudo: na maçã que cai da arvore, no magnetismo que gira a sua bussola e ate nas moléculas do seu corpo. Fisica é tudo :heart:
+>Physics is in everything: the apple that falls from the tree, the magnetism that turns your compass and even the molecules in your body. Physics is everything :heart:

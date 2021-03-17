@@ -1,2 +1,10 @@
 # Node Modules
 node_modules/
+
+# Sample's Files
+dist/sample.d.ts
+dist/sample.js
+
+# src Folder
+src/index.ts
+src/sample.ts
