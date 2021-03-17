@@ -1,85 +1,66 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.velocidadeMediaMUV = exports.funçaoHorariaDoEspaço = exports.funçaoHorariaDaVelocidade = exports.aceleraçaoMedia = exports.velocidadeRelativaAfastamento = exports.velocidadeRelativaPerseguiçao = exports.velocidadeRelativaEncontro = exports.funçaoHorariaDasPosicoes = exports.converterVelocidadeMedia = exports.velocidadeEscalarMedia = exports.resultanteDeVetores = exports.apenasNumero = exports.print = void 0;
+exports.accelerationEquationPosition = exports.accelerationEquationVelocity = exports.averageAcceleration = exports.relativeVelocityDistance = exports.relativeVelocityPersecution = exports.relativeVelocityMeet = exports.uniformMotionEquationPosition = exports.averageVelocity = exports.resultantOfVectors = exports.onlyNumbers = exports.print = void 0;
 // ----------------------------------------------------
-//                FACILIDADES PARA O DEV
+//                 FACILITIES FOR DEV
 // ----------------------------------------------------
-//Exibe na tela (console/terminal)
+//Displays on the screen (console / terminal)
 var print = function (e) { return console.log(e); };
 exports.print = print;
-//Retorna só o numero sem a unidade de medida
-var apenasNumero = function (valor) { return Number(valor.split(" ")[0]); };
-exports.apenasNumero = apenasNumero;
+//Returns only the number without the unit of measure
+var onlyNumbers = function (value) { return Number(value.split(" ")[0]); };
+exports.onlyNumbers = onlyNumbers;
 // ----------------------------------------------------
-//                       VETORES
+//                       VECTORS
 // ----------------------------------------------------
-//Resultante de vetores com a lei dos Cossenos (Regra do Paralelogramo)
-var resultanteDeVetores = function (vetorA, vetorB, anguloGraus) {
-    var radiano = anguloGraus * Math.PI / 180;
-    var resultanteAoQuadrado = (Math.pow(vetorA, 2) + Math.pow(vetorB, 2) + (2 * vetorA * vetorB * Math.cos(radiano)));
-    var resultante = Math.round(Math.sqrt(resultanteAoQuadrado));
-    return "" + resultante;
+//	Resultant of vectors with the law of cosines (Parallelogram Law of Vectors)
+var resultantOfVectors = function (vectorA, vectorB, angleDeg) {
+    var rad = angleDeg * Math.PI / 180;
+    var resultingSquared = (Math.pow(vectorA, 2) + Math.pow(vectorB, 2) + (2 * vectorA * vectorB * Math.cos(rad)));
+    var resultant = Math.round(Math.sqrt(resultingSquared));
+    return resultant;
 };
-exports.resultanteDeVetores = resultanteDeVetores;
+exports.resultantOfVectors = resultantOfVectors;
 // ----------------------------------------------------
-//                      CINEMATICA
+//                      KINEMATICS
 // ----------------------------------------------------
-//Velocidade Escalar media
-var velocidadeEscalarMedia = function (deslocamento, tempo, unidadeMedida) {
-    return tempo < 0 ? "Não existe tempo negativo!" : deslocamento / tempo + " " + unidadeMedida;
+//Average Velocity
+var averageVelocity = function (displacement, time, velocityUnit) {
+    return time < 0 ? "There is no negative time!" : displacement / time + " " + velocityUnit;
 };
-exports.velocidadeEscalarMedia = velocidadeEscalarMedia;
-//Conversor de unidade de Velocidade Media
-var converterVelocidadeMedia = function (velocidadeMedia) {
-    var num = Number(velocidadeMedia.split(" ")[0]);
-    var unidade = velocidadeMedia.split(" ")[1];
-    switch (unidade) {
-        case "km/h":
-            return Number(num) / 3.6 + " m/s";
-        case "m/s":
-            return Number(num) * 3.6 + " km/h";
-        default:
-            return "Conversão Inválida!";
-    }
+exports.averageVelocity = averageVelocity;
+//Equation of Uniform Motion (Position)
+var uniformMotionEquationPosition = function (initialPosition, velocity, time) {
+    return time < 0 ? "There is no negative time!" : initialPosition + velocity * time + " m";
 };
-exports.converterVelocidadeMedia = converterVelocidadeMedia;
-//Função horaria das posições
-var funçaoHorariaDasPosicoes = function (espaçoInicial, velocidade, tempo) {
-    return tempo < 0 ? "Não existe tempo negativo!" : espaçoInicial + velocidade * tempo + " m";
+exports.uniformMotionEquationPosition = uniformMotionEquationPosition;
+//Relative Velocity (Meeting)
+var relativeVelocityMeet = function (velocityA, velocityB, velocityUnit) {
+    return velocityA + velocityB + " " + velocityUnit;
 };
-exports.funçaoHorariaDasPosicoes = funçaoHorariaDasPosicoes;
-//Velocidade Relativa (Encontro)
-var velocidadeRelativaEncontro = function (velocidadeA, velocidadeB, unidadeMedida) {
-    return velocidadeA + velocidadeB + " " + unidadeMedida;
+exports.relativeVelocityMeet = relativeVelocityMeet;
+//Relative Velocity (Persecution)
+var relativeVelocityPersecution = function (velocityA, velocityB, velocityUnit) {
+    return velocityA - velocityB + " " + velocityUnit;
 };
-exports.velocidadeRelativaEncontro = velocidadeRelativaEncontro;
-//Velocidade Relativa (Perseguição)
-var velocidadeRelativaPerseguiçao = function (velocidadeA, velocidadeB, unidadeMedida) {
-    return velocidadeA - velocidadeB + " " + unidadeMedida;
+exports.relativeVelocityPersecution = relativeVelocityPersecution;
+//Relative Velocity (Distance)
+var relativeVelocityDistance = function (velocityA, velocityB, velocityUnit) {
+    return velocityA + velocityB + " " + velocityUnit;
 };
-exports.velocidadeRelativaPerseguiçao = velocidadeRelativaPerseguiçao;
-//Velocidade Relativa (Afastamento)
-var velocidadeRelativaAfastamento = function (velocidadeA, velocidadeB, unidadeMedida) {
-    return velocidadeA + velocidadeB + " " + unidadeMedida;
+exports.relativeVelocityDistance = relativeVelocityDistance;
+//Average Acceleration
+var averageAcceleration = function (velocityChange, time) {
+    return time < 0 ? "There is no negative time!" : velocityChange / time + " m/s\u00B2";
 };
-exports.velocidadeRelativaAfastamento = velocidadeRelativaAfastamento;
-//Aceleração Media
-var aceleraçaoMedia = function (variacaoVelocidade, tempo) {
-    return tempo < 0 ? "Não existe tempo negativo!" : variacaoVelocidade / tempo + " m/s\u00B2";
+exports.averageAcceleration = averageAcceleration;
+//Constant Acceleration Equation (Velocity)
+var accelerationEquationVelocity = function (initialVelocity, acceleration, time) {
+    return time < 0 ? "There is no negative time!" : initialVelocity + acceleration * time + " m/s";
 };
-exports.aceleraçaoMedia = aceleraçaoMedia;
-//Função Horaria da Velocidade
-var funçaoHorariaDaVelocidade = function (velocidadeInicial, aceleraçao, tempo) {
-    return tempo < 0 ? "Não existe tempo negativo!" : velocidadeInicial + aceleraçao * tempo + " m/s";
+exports.accelerationEquationVelocity = accelerationEquationVelocity;
+//Constant Acceleration Equation (Position)
+var accelerationEquationPosition = function (initialPosition, initialVelocity, time, acceleration) {
+    return time < 0 ? "There is no negative time!" : initialPosition + (initialVelocity * time) + (acceleration * Math.pow(time, 2)) / 2 + " m";
 };
-exports.funçaoHorariaDaVelocidade = funçaoHorariaDaVelocidade;
-//Função Horaria do Espaço
-var funçaoHorariaDoEspaço = function (espaçoInicial, velocidadeInicial, tempo, aceleraçao) {
-    return tempo < 0 ? "Não existe tempo negativo!" : espaçoInicial + (velocidadeInicial * tempo) + (aceleraçao * Math.pow(tempo, 2)) / 2 + " m";
-};
-exports.funçaoHorariaDoEspaço = funçaoHorariaDoEspaço;
-//Velocidade Media (MUV)
-var velocidadeMediaMUV = function (velocidadeA, velocidadeB, unidadeMedida) {
-    return (velocidadeA + velocidadeB) / 2 + " " + unidadeMedida;
-};
-exports.velocidadeMediaMUV = velocidadeMediaMUV;
+exports.accelerationEquationPosition = accelerationEquationPosition;

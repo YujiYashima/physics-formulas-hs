@@ -1,108 +1,102 @@
 // ----------------------------------------------------
-//             UNIDADES DE MEDIDAS PADROES
+//               STANDARD MEASURING UNITS
 // ----------------------------------------------------
-type unidadeVelocidade = |"km/h"|"m/s";
+type velocityUnits = |"km/h"|"m/s";
 
 
 // ----------------------------------------------------
-//                FACILIDADES PARA O DEV
+//                 FACILITIES FOR DEV
 // ----------------------------------------------------
 
-//Exibe na tela (console/terminal)
+//Displays on the screen (console / terminal)
 const print = (e: any) => console.log(e);
 
-//Retorna só o numero sem a unidade de medida
-const apenasNumero = (valor: string) => Number(valor.split(" ")[0]);
+//Returns only the number without the unit of measure
+const onlyNumbers = (value: string) => Number(value.split(" ")[0]);
 
 
 // ----------------------------------------------------
-//                       VETORES
+//                       VECTORS
 // ----------------------------------------------------
 
-//Resultante de vetores com a lei dos Cossenos (Regra do Paralelogramo)
-const resultanteDeVetores = (vetorA: number, vetorB: number, anguloGraus: number) => {
+//	Resultant of vectors with the law of cosines (Parallelogram Law of Vectors)
+const resultantOfVectors = (vectorA: number, vectorB: number, angleDeg: number) => {
 
-    const radiano = anguloGraus * Math.PI/180;
+    const rad = angleDeg * Math.PI/180;
 
-    const resultanteAoQuadrado = (Math.pow(vetorA, 2) + Math.pow(vetorB, 2) + (2 * vetorA * vetorB * Math.cos(radiano)));
+    const resultingSquared = (Math.pow(vectorA, 2) + Math.pow(vectorB, 2) + (2 * vectorA * vectorB * Math.cos(rad)));
 
-    const resultante = Math.round(Math.sqrt(resultanteAoQuadrado));
+    const resultant = Math.round(Math.sqrt(resultingSquared));
 
-    return `${resultante}`;
+    return resultant;
 }
 
 
 // ----------------------------------------------------
-//                      CINEMATICA
+//                      KINEMATICS
 // ----------------------------------------------------
 
-//Velocidade Escalar media
-const velocidadeEscalarMedia = (deslocamento: number, tempo: number, unidadeMedida: unidadeVelocidade) => {
+//Average Velocity
+const averageVelocity = (displacement: number, time: number, velocityUnit: velocityUnits) => {
     
-    return tempo < 0 ? "Não existe tempo negativo!" : `${deslocamento/tempo} ${unidadeMedida}`;
+    return time < 0 ? "There is no negative time!" : `${displacement/time} ${velocityUnit}`;
 }
 
-//Função horaria das posições
-const funçaoHorariaDasPosicoes = (espaçoInicial: number, velocidade: number, tempo: number) => {
+//Equation of Uniform Motion (Position)
+const uniformMotionEquationPosition = (initialPosition: number, velocity: number, time: number) => {
     
-    return tempo < 0 ? "Não existe tempo negativo!" : `${espaçoInicial + velocidade * tempo} m`;
+    return time < 0 ? "There is no negative time!" : `${initialPosition + velocity * time} m`;
 }
 
-//Velocidade Relativa (Encontro)
-const velocidadeRelativaEncontro = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => {
+//Relative Velocity (Meeting)
+const relativeVelocityMeet = (velocityA: number, velocityB: number, velocityUnit: velocityUnits) => {
     
-    return `${velocidadeA + velocidadeB} ${unidadeMedida}`;
+    return `${velocityA + velocityB} ${velocityUnit}`;
 }  
 
-//Velocidade Relativa (Perseguição)
-const velocidadeRelativaPerseguiçao = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => {
+//Relative Velocity (Persecution)
+const relativeVelocityPersecution = (velocityA: number, velocityB: number, velocityUnit: velocityUnits) => {
     
-    return `${velocidadeA - velocidadeB} ${unidadeMedida}`;
+    return `${velocityA - velocityB} ${velocityUnit}`;
 }
 
-//Velocidade Relativa (Afastamento)
-const velocidadeRelativaAfastamento = (velocidadeA: number, velocidadeB: number, unidadeMedida: unidadeVelocidade) => {
+//Relative Velocity (Distance)
+const relativeVelocityDistance = (velocityA: number, velocityB: number, velocityUnit: velocityUnits) => {
     
-    return `${velocidadeA + velocidadeB} ${unidadeMedida}`;
+    return `${velocityA + velocityB} ${velocityUnit}`;
 }
 
-//Aceleração Media
-const aceleraçaoMedia = (variacaoVelocidade: number, tempo: number) => {
+//Average Acceleration
+const averageAcceleration = (velocityChange: number, time: number) => {
     
-    return tempo < 0 ? "Não existe tempo negativo!" : `${variacaoVelocidade / tempo} m/s²`;
+    return time < 0 ? "There is no negative time!" : `${velocityChange / time} m/s²`;
 }
 
-//Função Horaria da Velocidade
-const funçaoHorariaDaVelocidade = (velocidadeInicial: number, aceleraçao: number, tempo: number) => {
+//Constant Acceleration Equation (Velocity)
+const accelerationEquationVelocity = (initialVelocity: number, acceleration: number, time: number) => {
     
-    return tempo < 0 ? "Não existe tempo negativo!" : `${velocidadeInicial + aceleraçao * tempo} m/s`;
+    return time < 0 ? "There is no negative time!" : `${initialVelocity + acceleration * time} m/s`;
 }
 
-//Função Horaria do Espaço
-const funçaoHorariaDoEspaço = (espaçoInicial: number, velocidadeInicial: number, tempo: number, aceleraçao:number) => {
+//Constant Acceleration Equation (Position)
+const accelerationEquationPosition = (initialPosition: number, initialVelocity: number, time: number, acceleration:number) => {
     
-    return tempo < 0 ? "Não existe tempo negativo!" : `${espaçoInicial + (velocidadeInicial * tempo) + (aceleraçao * tempo ** 2)/2} m`;
-}
-
-//Velocidade Media (MUV)
-const velocidadeMediaMUV = (velocidadeA: number, velocidadeB:number, unidadeMedida: unidadeVelocidade) => {
-
-    return `${(velocidadeA + velocidadeB)/2} ${unidadeMedida}`;
+    return time < 0 ? "There is no negative time!" : `${initialPosition + (initialVelocity * time) + (acceleration * time ** 2)/2} m`;
 }
 
 
 // ----------------------------------------------------
-//                 EXPORTS DE FUNÇOES
+//                 EXPORTS OF FUNCTIONS
 // ----------------------------------------------------
 
 //Dev
-export { print, apenasNumero };
+export { print, onlyNumbers };
 
 //Vetores
-export { resultanteDeVetores };
+export { resultantOfVectors };
 
 //Cinematica
 export { 
-    velocidadeEscalarMedia, funçaoHorariaDasPosicoes, velocidadeRelativaEncontro, velocidadeRelativaPerseguiçao, velocidadeRelativaAfastamento, aceleraçaoMedia, funçaoHorariaDaVelocidade, funçaoHorariaDoEspaço, velocidadeMediaMUV
-};
+    averageVelocity, uniformMotionEquationPosition, relativeVelocityMeet, relativeVelocityPersecution, relativeVelocityDistance, averageAcceleration, accelerationEquationVelocity, accelerationEquationPosition
+}
 

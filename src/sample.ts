@@ -1,3 +1,4 @@
-import { print, resultanteDeVetores } from './index';
+import { print, resultantOfVectors } from './index';
 
-print(resultanteDeVetores(3, 4, 90));
+print(resultantOfVectors(3, 4, 90));
+resultantOfVectors(8, 5, 120);
