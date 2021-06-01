@@ -19,12 +19,14 @@ import * as physics from "physics-formulas-hs";
 
 We have already started using the ```Typescript```, so the project is strongly typed, however there are rules within physics that prevent us from using some values. For this reason, in the documentation and videos you will have some guidelines as to the use of some numbers.
 
-For this, we use topics to indicate the type of data that must be inserted, some of which are restricted or totally free:
+For this, we use tables to indicate the type of data that must be inserted, some of which are restricted or totally free:
 
-**EX:**
-- Displacement: Number **(Any numerical value)**
-- Time: Number >= 0 **(Any numeric value greater than or equal to 0)**
-- MeasurementUnit: velocityUnits => "km/h" or "m/s" **(Restriction between km/h or m/s)**
+Displacement | Time | MeasurementUnit
+:---: | :---: | :---:
+`Number` | `Number` | `VelocityUnits`
+** | Any Numeric value greater than or equal to 0 `>= 0` | `km/h` or `m/s`
+
+> "**" This means that there are no restrictions
 
 In addition, we will use the functions in 2 ways: the "require" form and the "import" form, both of which can be used.
 

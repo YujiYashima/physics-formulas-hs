@@ -1,27 +1,28 @@
 ## Kinematics
 
-### Average Scalar Velocity
+### Average Speed
 
->It is used to calculate the ```Average Scalar Velocity```. Being the result of the division between ```Displacement``` by ```Time```.
+>It is used to calculate the ```Average Speed```. Being the result of the division between ```Distance``` by ```Time``` (d/Δt).
 
 ```javascript
-physics.averageVelocity(10, 5, "km/h");
+physics.averageSpeed(10, 5, "km/h");
 // --> 2 km/h
 ```
 
 ```ts
-import { averageVelocity } from "physics-formulas-hs";
+import { averageSpeed } from "physics-formulas-hs";
 
-averageVelocity(10, 5, "km/h"); // --> 2 km/h
+averageSpeed(10, 5, "km/h"); // --> 2 km/h
 ```
 
-- Displacement: Number
-- Time: Number >= 0
-- velocityUnit: velocityUnits => "km/h" ou "m/s"
+Distance | Time | MeasurementUnit
+:---: | :---: | :---:
+`Number` | `Number` | `VelocityUnits`
+Any Numeric value greater than or equal to 0 `>= 0` | Any Numeric value greater than or equal to 0 `>= 0` | `km/h` or `m/s`
   
 Supports Link:
-- [Video Aula](https://www.youtube.com/watch?v=1y8x1ApGDFk&list=PLNfWNKz4iEr8U354-5tSQPaiaybFvrlAy&index=1)
-- [Leitura e Exercicios](https://brasilescola.uol.com.br/fisica/velocidade-escalar-media.htm)
+- [Video lessons](https://youtu.be/6arvL--EHJU)
+- [Reading articles](https://brasilescola.uol.com.br/fisica/velocidade-escalar-media.htm)
 
 ---
 
@@ -48,25 +49,5 @@ uniformMotionEquationPosition(0, 10, 10); // --> 100 m
 Supports Link:
 - [Video Aula](https://www.youtube.com/watch?v=OBkdQSY-gFA&list=PLNfWNKz4iEr8VBHz7HsWO0zMszS7mp0V-&index=1)
 - [Leitura e Exercicios](https://exercicios.brasilescola.uol.com.br/exercicios-fisica/exercicios-sobre-funcao-horaria-espaco.htm)
-
----
-
-### Relative Velocity (Meeting)
-
->It is used to calculate the ```Relative Velocity ​​(Meeting)```, where the aim is to find a velocity between 2 bodies that are going to meet.
-
-```javascript
-physics.relativeVelocityMeet(10, 8, "m/s"); // --> 18 m/s
-
-physics.relativeVelocityMeet(20, 10, "km/h"); // --> 30 km/h
-```
-
-- VelocityA: Number 
-- VelocityB: Number
-- velocityUnit: velocityUnit => "km/h" ou "m/s"
-
-Supports Link:
-- [Video Aula](https://www.youtube.com/watch?v=rkDl-p38-4Y&list=PLNfWNKz4iEr8VBHz7HsWO0zMszS7mp0V-&index=7)
-- [Leitura e Exercicios](https://brasilescola.uol.com.br/fisica/velocidade-relativa.htm)
 
 ---
