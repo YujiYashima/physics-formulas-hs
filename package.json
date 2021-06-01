@@ -2,11 +2,12 @@
   "name": "physics-formulas-hs",
   "version": "2.0.9",
   "description": "NPM package with an emphasis on physics and its formulas. Full English language support and ease of understanding for laypeople and students. Links for learning the formulas and easy access.",
-  "main": "dist/index.min.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/all.js",
+  "types": "dist/all.d.ts",
   "scripts": {
     "build": "tsc --declaration",
-    "dev": "ts-node-dev --respawn --transpile-only src/sample.ts"
+    "dev": "ts-node-dev --respawn --transpile-only test/sample.ts",
+    "concat": "gulp concat"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,10 @@
   "homepage": "https://github.com/YujiYashima/physics-formulas-hs#readme",
   "devDependencies": {
     "@types/node": "^14.14.32",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-uglify": "^3.0.2",
     "ts-node": "^9.1.1",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.3"

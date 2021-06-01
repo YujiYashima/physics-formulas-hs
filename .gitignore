@@ -3,3 +3,14 @@ node_modules/
 
 # Folder src/
 src/
+src/index.ts
+src/sample.ts
+
+# Gulp File
+gulpfile.js
+
+# Teste Folder
+test/
+
+# My Notes
+Notes.txt

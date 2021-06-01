@@ -9,7 +9,6 @@
   <a href="#goals">Goals</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#functions">Functions</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contributors">Contributors</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#translate">In other languages</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#access">Access</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licence">Licence</a>&nbsp;&nbsp;&nbsp;
 </p>
@@ -33,28 +32,8 @@ $ npm i physics-formulas-hs
 
 <h2 id="content">Physics Content</h2>
 
-<details>
-  <summary>Vectors</summary>
-
-  - [x] Parallelogram Law of Vectors
-</details>
-
-<details><summary>Mechanics</summary>
-
-  <details><summary>Kinematics</summary>
-    
-  </details>
-
-  <details><summary>Dynamics</summary>
-    
-  </details>
-
-  <details><summary>Statics</summary>
-    
-  </details>
-
-</details>
-
+- [x] Vectors
+- [X] Uniform Motion 
 
 <h2 id="goals">Goals</h2>
 
@@ -76,8 +55,6 @@ import physics from 'physics-formulas-hs';
 physics.averageVelocity(10, 2, "km/h"); // --> 5 km/h
 
 physics.averageAcceleration(100, 5); // --> 20 m/s²
-
-physics.uniformMotionEquation(0, 10, 2); // --> 20 m
 ```
 
 > NOTE: **[Complete documentation of all functions](https://github.com/YujiYashima/physics-formulas-hs/blob/main/docs/General.md)**
@@ -88,7 +65,7 @@ physics.uniformMotionEquation(0, 10, 2); // --> 20 m
 
 - [List of all contributors](https://github.com/YujiYashima/physics-formulas-hs/graphs/contributors)
 
-### Contribute to our fisca project:
+### Contribute to our project:
 
 - Fork this repository;
 
@@ -116,7 +93,7 @@ physics.uniformMotionEquation(0, 10, 2); // --> 20 m
 
 <p align="center">OR</p>
 
-- DO a [Issue](https://github.com/YujiYashima/physics-formulas-hs/issues) 
+- Do a [Issue](https://github.com/YujiYashima/physics-formulas-hs/issues) 
 
 > **Any modifications or help are welcome. I want to improve the project and build a package that is easy to understand and very complete. I hope to have help from the community :blue_heart: :blue_heart:**
 
