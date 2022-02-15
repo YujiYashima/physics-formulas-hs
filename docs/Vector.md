@@ -24,4 +24,7 @@ Support links:
 - [Video Aula](https://youtu.be/izOu6CboHKU)
 - [Leitura e Exercicios](https://meuartigo.brasilescola.uol.com.br/matematica/porque-que-na-lei-dos-cossenos-formula-usada-negativa-na-regra.htm#:~:text=Usamos%20essa%20regra%20do%20paralelogramo,B%20*%20Cos%20(%CE%B8).)
 
----
+---  
+
+
+HI
